@@ -6,7 +6,7 @@
 <div>
 	<div class="sm:flex sm:items-center">
 		<div class="sm:flex-auto">
-			<h1 class="text-2xl font-semibold leading-6 text-gray-900">Dealer History</h1>
+			<h1 class="text-2xl font-semibold leading-6 text-gray-900 dark:text-white">Dealer History</h1>
 			<p class="mt-2 text-sm text-gray-700">
 				Below is the current and historical dealer listings for this VIN.
 			</p>
@@ -20,27 +20,27 @@
 						<tr>
 							<th
 								scope="col"
-								class="whitespace-nowrap py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-0"
+								class="whitespace-nowrap py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 dark:text-white sm:pl-0"
 								>Price</th
 							>
 							<th
 								scope="col"
-								class="whitespace-nowrap px-2 py-3.5 text-left text-sm font-semibold text-gray-900"
+								class="whitespace-nowrap px-2 py-3.5 text-left text-sm font-semibold text-gray-900 dark:text-white"
 								>Last Seen</th
 							>
 							<th
 								scope="col"
-								class="whitespace-nowrap px-2 py-3.5 text-left text-sm font-semibold text-gray-900"
+								class="whitespace-nowrap px-2 py-3.5 text-left text-sm font-semibold text-gray-900 dark:text-white"
 								>Miles</th
 							>
 							<th
 								scope="col"
-								class="whitespace-nowrap px-2 py-3.5 text-left text-sm font-semibold text-gray-900"
+								class="whitespace-nowrap px-2 py-3.5 text-left text-sm font-semibold text-gray-900 dark:text-white"
 								>Dealer</th
 							>
 							<th
 								scope="col"
-								class="whitespace-nowrap px-2 py-3.5 text-left text-sm font-semibold text-gray-900"
+								class="whitespace-nowrap px-2 py-3.5 text-left text-sm font-semibold text-gray-900 dark:text-white"
 								>Location</th
 							>
 							<th scope="col" class="relative whitespace-nowrap py-3.5 pl-3 pr-4 sm:pr-0">
@@ -48,16 +48,16 @@
 							</th>
 						</tr>
 					</thead>
-					<tbody class="divide-y divide-gray-200 bg-white">
+					<tbody class="divide-y divide-gray-200">
 						{#each dealerhistory as listing}
 							<tr>
 								<td class="whitespace-nowrap py-2 pl-4 pr-3 text-sm text-gray-500 sm:pl-0"
 									>{#if listing.price}{curr(listing.price)}{/if}</td
 								>
-								<td class="whitespace-nowrap px-2 py-2 text-sm font-medium text-gray-900"
+								<td class="whitespace-nowrap px-2 py-2 text-sm font-medium text-gray-900 dark:text-white"
 									>{listing.lastseen}</td
 								>
-								<td class="whitespace-nowrap px-2 py-2 text-sm text-gray-900"
+								<td class="whitespace-nowrap px-2 py-2 text-sm text-gray-900 dark:text-white"
 									>{#if listing.miles}{commas(listing.miles)}{/if}</td
 								>
 								<td class="whitespace-nowrap px-2 py-2 text-sm text-gray-500"

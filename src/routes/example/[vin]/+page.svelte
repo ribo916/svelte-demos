@@ -69,10 +69,10 @@
 
 <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 	<div class="mx-auto max-w-3xl">
-		<h1 class="text-3xl font-semibold leading-6 text-gray-900 my-6">
+		<h1 class="text-3xl font-semibold leading-6 my-6 text-gray-900 dark:text-white dark:text-white">
 			Outreach plan for {data.vin}
 		</h1>
-		<h2 class="text-xl font-semibold leading-6 text-gray-900 my-4">
+		<h2 class="text-xl font-semibold leading-6 my-4 text-gray-900 dark:text-white dark:text-white">
 			{details.Year}
 			{details.Make}
 			{details.Model}
@@ -81,28 +81,22 @@
 		<div class="flex">
 			<Toggle bind:toggle={showPayment}>
 				<span class="ml-3 text-sm" id="payments-label">
-					<span
-						class:text-gray-900={showPayment}
-						class:text-gray-500={!showPayment}
-						class="font-medium">Show Payments</span
-					>
-					<!-- <span class="text-gray-500">(subtitle)</span> -->
+					<span class:text-skeleton-dark={showPayment} class:text-skeleton-light={!showPayment} class="font-medium">Show Payments</span>
+					<!-- <span class="text-skeleton-light">(subtitle)</span> -->
 				</span>
 			</Toggle>
 
 			<Toggle bind:toggle={showStage}>
-				<span class="ml-3 text-sm" id="phase-label">
-					<span class:text-gray-900={showStage} class:text-gray-500={!showStage} class="font-medium"
-						>Show Phase</span
-					>
+				<span class="ml-3 text-sm" id="payments-label">
+					<span class:text-skeleton-dark={showPayment} class:text-skeleton-light={!showPayment} class="font-medium">Show Phase</span>
+					<!-- <span class="text-skeleton-light">(subtitle)</span> -->
 				</span>
 			</Toggle>
 
 			<Toggle bind:toggle={showCalcs}>
-				<span class="ml-3 text-sm" id="calculations-label">
-					<span class:text-gray-900={showCalcs} class:text-gray-500={!showCalcs} class="font-medium"
-						>Show Calculations</span
-					>
+				<span class="ml-3 text-sm" id="payments-label">
+					<span class:text-skeleton-dark={showPayment} class:text-skeleton-light={!showPayment} class="font-medium">Show Calculations</span>
+					<!-- <span class="text-skeleton-light">(subtitle)</span> -->
 				</span>
 			</Toggle>
 		</div>
@@ -124,7 +118,7 @@
 							<div class="min-w-0 flex-1">
 								<div>
 									<div class="text-sm">
-										<span class="font-medium text-gray-900">
+										<span class="font-medium text-gray-900 dark:text-white dark:text-white">
 											Loan Balance of {curr(details.CurrentBalance)} (Payment #{details.CurrentPaymentNumber}
 											of {details.NumberOfPayments})</span
 										>
@@ -214,7 +208,7 @@
 											<div class="text-sm leading-8 text-gray-500">
 												<span class="mr-0.5">
 													Payment {i} on
-													<span class="font-medium text-gray-900">{payment.am.date}</span>
+													<span class="font-medium text-gray-900 dark:text-white">{payment.am.date}</span>
 													&mdash; Estimated Value: {curr(payment.am.currentVehicleValue)}
 												</span>
 											</div>
@@ -257,13 +251,13 @@
 											<div class="text-sm leading-8 text-gray-500">
 												<span class="mr-0.5">
 													Loan
-													<a href="." class="font-medium text-gray-900">#{details.AccountNumber}</a>
+													<a href="." class="font-medium text-gray-900 dark:text-white">#{details.AccountNumber}</a>
 													is in funnel phase
 												</span>
 												<span class="mr-0.5">
 													<a
 														href="."
-														class="inline-flex items-center gap-x-1.5 rounded-full px-2 py-1 text-xs font-medium text-gray-900 ring-1 ring-inset ring-gray-200"
+														class="inline-flex items-center gap-x-1.5 rounded-full px-2 py-1 text-xs font-medium text-gray-900 dark:text-white ring-1 ring-inset ring-gray-200"
 													>
 														<svg
 															class="h-1.5 w-1.5 fill-emerald-500"
@@ -355,7 +349,7 @@
 										<div class="min-w-0 flex-1">
 											<div>
 												<div class="text-sm">
-													<span class="font-medium text-gray-900"> MILESTONE</span>
+													<span class="font-medium text-gray-900 dark:text-white"> MILESTONE</span>
 												</div>
 												<p class="mt-0.5 text-sm text-gray-500">Loan status:</p>
 											</div>
@@ -391,7 +385,7 @@
 										<div class="min-w-0 flex-1">
 											<div>
 												<div class="text-sm">
-													<span class="font-medium text-gray-900"> OUTREACH ACTION</span>
+													<span class="font-medium text-gray-900 dark:text-white"> OUTREACH ACTION</span>
 												</div>
 												<p class="mt-0.5 text-sm text-gray-500">Click below to execute:</p>
 											</div>
@@ -450,7 +444,7 @@
 							<div class="min-w-0 flex-1">
 								<div>
 									<div class="text-sm">
-										<a href="#" class="font-medium text-gray-900">New Member Loan</a>
+										<a href="#" class="font-medium text-gray-900 dark:text-white">New Member Loan</a>
 									</div>
 									<p class="mt-0.5 text-sm text-gray-500">Before the end of this loan</p>
 								</div>
