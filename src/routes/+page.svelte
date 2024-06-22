@@ -29,8 +29,11 @@
 			</a>
 		</div>
 		<div class="space-y-2">
-			<p>Try these links:</p>
-			<p><a href="https://www.google.com/" class="code" target="_blank">Google</a></p>
+			<p>Try these outreach vins:</p>
+			<p><a href="/example/1FTFW1E58PKF15989" class="code">1FTFW1E58PKF15989</a></p>
+			<p><a href="/example/WP0AA2A96PS205637" class="code">WP0AA2A96PS205637</a></p>
+			<p><a href="/example/4T1BF1FK5EU305670" class="code">4T1BF1FK5EU305670</a></p>
+			<p><a href="/example/LVYA22MK1KP079929" class="code">LVYA22MK1KP079929</a></p>
 		</div>
 	</div>
 </div>
